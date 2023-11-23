@@ -1,0 +1,36 @@
+package practicoIII;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+
+
+//PRACTICO 2 - JOINING METODO FILTRAR PALABRAS CON N
+
+public class ejercicio2 {
+
+	public static void main(String[] args) {
+		
+		//---------ejercicio nº2 de la clase nº3
+				List<String> texto2 = new ArrayList<>();
+				
+				texto2.add( "Uno" );
+				texto2.add( "Segundo" );
+				texto2.add( "Tres" );
+				texto2.add( "Cuarto" );
+				texto2.add( "Quinto" );
+				texto2.add( "dos" );
+				
+				int n=3;
+				String palabra = concatenar(texto2,n);
+				System.out.println("Colección concatenada con elementos mayores a "+n+" :"+palabra);
+				
+			}
+			
+			public static String concatenar(List<String> l, int n) {
+				String concatenada = l.stream().filter((elemento) -> elemento.length() > n).collect(Collectors.joining(", "));
+				return concatenada;
+			}
+
+		}

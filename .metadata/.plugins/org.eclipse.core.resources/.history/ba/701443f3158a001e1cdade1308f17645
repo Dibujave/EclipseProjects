@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 
 
-//PRACTICO 2 - METODO FILTRAR PALABRAS CON LONGITUD Y JOINING
+//PRACTICO 2 - JOINING METODO FILTRAR PALABRAS CON LONGITUD
 
 public class ejercicio2 {
 
@@ -23,7 +23,7 @@ public class ejercicio2 {
 				
 		int n=2;
 		String palabra = concatenar(texto1,n);
-		System.out.println("COLECCIÓN CONCATENADA CON ELEMENTOS MAYORES A "+n+": \n"+palabra);
+		System.out.println("COLECCIÓN CONCATENADA CON ELEMENTOS MAYORES A "+n+": \n "+palabra);
 				
 	}
 			

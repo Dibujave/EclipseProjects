@@ -4,7 +4,7 @@ public class validadorInscripciones {
 
 	public static void main(String[] args) {
 		
-		 Alumno alumno = new Alumno("Mauro Vicens", "IS0022");
+		 Alumno alumno = new Alumno("Cesar Barber", "IS0022");
 	     
 		 Materia algoritmosYEstructuraDeDatos = new Materia("Algoritmos y Estructura de Datos");
 	     Materia paradigmasDeProgramacion = new Materia("Paradimgas de Programacion");

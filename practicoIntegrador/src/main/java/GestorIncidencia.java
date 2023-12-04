@@ -1,16 +1,14 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
 import java.util.Scanner;
+
 
 public class GestorIncidencia {
 
 	public static void main(String[] args) {
-		
+		System.out.println("INTEGRADOR | SISTEMA DE REPORTE DE INCIDENTES ");
+		System.out.println("\n");
 		try {
 						
-			ConexionDB.conexionDB();
+		   ConexionDB.conexionDB();
 	       
            //**hacer un menu con opciones para: ABM cliente -- Repotar  Incidente--listar técnicos - salir
 	       

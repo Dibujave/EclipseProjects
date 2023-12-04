@@ -59,7 +59,32 @@ public static Tecnico altaTecnico(){
 		entrada.close();
 		return tec1;
 	 	
-	 }	
+	 }
+
+public String getCuitEmpleado() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+public String getCodSoporte() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+public String getTituloTecnico() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+public String getDispoTecnico() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+public String getEstadoTecnico() {
+	// TODO Auto-generated method stub
+	return null;
+}	
 	
 	
 }

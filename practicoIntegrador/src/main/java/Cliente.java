@@ -61,4 +61,44 @@ public static Cliente altaCliente() {
 		return cliente1;
 		}
 
+public String getRazonSocial() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+public String getCuitCliente() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+public String getNomCliente() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+public String getApeCliente() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+public String getDireCliente() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+public String getMailCliente() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+public String getCelCliente() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+public String getContratos() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
 }

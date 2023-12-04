@@ -10,12 +10,15 @@ import java.time.LocalDate;
 public class ConexionDB {
 	private static Connection conX;
 	private static Statement sT;
+	private static boolean resultado;
+	private static int id;
+	private static String ape;
 
 
   public static Connection conexionDB() {
 	
 	try {
-		conX = DriverManager.getConnection("jdbc:mysql://localhost:3306/db-soporte-incidente","root","");
+		conX = DriverManager.getConnection("jdbc:mysql://localhost:3306/db-soporte-incidente","root","root");
 		sT = conX.createStatement();	
 		return conX;
 		}
@@ -144,18 +147,19 @@ public static void listarEmpleado() {
  public static boolean validarCuitEmpleado(String cuitEmp) {
  String	consulta = String.format("select * from empleado where cuitEmpleado = %s",cuitEmp);	
 	ResultSet sql;
-	boolean resultado=false;
+	resultado = false;
 
 	try {
 		sql = sT.executeQuery(consulta);
-		int id=0;
-		String nom=" ", ape=" ";
+		setId(0);
+		String nom=" ";
+		setApe(" ");
 		
 		while (sql.next()) {
 			
-			id = sql.getInt(1);
+			setId(sql.getInt(1));
 			nom = sql.getString(3);
-			ape = sql.getString(4);
+			setApe(sql.getString(4));
 			System.out.println(sql.getInt(1)+"\t"+sql.getString(2)+"\t"+sql.getString(3)+"\t"+sql.getString(4));
 			if(sql.getRow()==0) { 
 				System.out.println("El empleado no existe, INGRESE OTRO CUIT");
@@ -261,6 +265,26 @@ System.out.println("Error en el insert de la tabla Incidente"+ obj);
 obj.fillInStackTrace();
 }
 
+}
+
+
+public static String getApe() {
+	return ape;
+}
+
+
+public static void setApe(String ape) {
+	ConexionDB.ape = ape;
+}
+
+
+public static int getId() {
+	return id;
+}
+
+
+public static void setId(int id) {
+	ConexionDB.id = id;
 }
 
 

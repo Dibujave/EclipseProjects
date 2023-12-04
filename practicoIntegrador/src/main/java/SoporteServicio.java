@@ -45,13 +45,43 @@ public static SoporteServicio altaSoporte(){
 	System.out.println("ESTADO DISPONIBLE/NO DISPONIBLE: ");
 	String estado = entrada.nextLine();
 	
-	//-----------ESTA LINEA HAY QUE ELIMINAR, SOLO ESTÁ PARA CONTROL EN DESARROLLO
+
 	SoporteServicio sop1 = new SoporteServicio(1,codSoporte,tipo,descripcion,tiempoReso,complejidad,estado);
 		
-	//System.out.println(sop1.toString());
+	
 
 	entrada.close();
 	return sop1;
+}
+
+public String getCodSoporte() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+public String getTipoSoporte() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+public String getDesSoporte() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+public String getComplejidadSoporte() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+public String getTmpRespSoporte() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+public String getEstadoSoporte() {
+	// TODO Auto-generated method stub
+	return null;
 }
 
 }

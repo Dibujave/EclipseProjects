@@ -53,6 +53,65 @@ public class Incidente {
 		entrada.close();
 		return inc1;
 	}
+
+	public int getIdEmpleado() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public int getIdCliente() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public int getIdSoporte() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public String getFechaResolucion() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public int getIdTecnico() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public String getHorasColchon() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String getEstadoIncidente() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public int getIdIncidente() {
+		return idIncidente;
+	}
+
+	public void setIdIncidente(int idIncidente) {
+		this.idIncidente = idIncidente;
+	}
+
+	public void setIdEmpleado(int idEmpleado) {
+		this.idEmpleado = idEmpleado;
+	}
+
+	public void setIdCliente(int idCliente) {
+		this.idCliente = idCliente;
+	}
+
+	public void setIdTecnico(int idTecnico) {
+		this.idTecnico = idTecnico;
+	}
+
+	public void setEstadoIncidente(String estadoIncidente) {
+		this.estadoIncidente = estadoIncidente;
+	}
 	
 	
 	

@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 
+@SuppressWarnings("unused")
 @Data
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
@@ -103,5 +104,40 @@ public static Empleado altaEmpleado(){
 		return emp1;
  	
  }
+
+public String getCuitEmpleado() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+public String getNomEmpleado() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+public String getApeEmpleado() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+public String getDireEmpleado() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+public String getCelEmpleado() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+public String getMailEmpleado() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+public String getAreaEmpleado() {
+	// TODO Auto-generated method stub
+	return null;
+}
 
 }
